@@ -1,4 +1,4 @@
-Klinik Template (Tailwind CDN) - README
+Rikke Mørch - Klinik README
 --------------------------------------
 
 Indhold i zip:
