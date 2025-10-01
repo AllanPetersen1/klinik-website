@@ -30,7 +30,7 @@ body {
 }
 
 /* Add a bottom border (underline) on hover for non-active links */
-.hover-underline::after {
+nav a::after {
   content: '';
   display: block;
   height: 2px;
@@ -39,8 +39,8 @@ body {
   transition: width 0.3s;
   margin-top: 2px;
 }
-
-.hover-underline:hover::after {
+nav a:hover::after,
+nav a.active::after {
   width: 100%;
 }
 

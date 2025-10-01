@@ -11,21 +11,23 @@
 </head>
 <body class="antialiased text-gray-800 bg-white">
 
-  <header class="bg-white shadow-sm text-lg">
+  <header class="bg-white shadow-sm text-xl">
     <div class="max-w-5xl mx-auto px-4">
       <div class="flex items-center justify-between py-4">
-        <!-- Logo / Nav-name -->
-        <a href="./" class="text-2xl text-gray-800 hover:text-primary transition-colors">Tandlæge <span class="font-bold">Rikke Mørch</span></a>
+        <!-- Logo / Home link -->
+        <a href="./" class="text-3xl text-gray-800 hover:text-primary transition-colors">
+          Tandlæge <span class="font-bold">Rikke Mørch</span>
+        </a>
   
         <!-- Desktop Menu -->
         <nav class="hidden md:flex md:items-center md:gap-8">
-          <a href="priser/" class="px-3 py-2 font-medium transition-colors rounded-md">
+          <a href="priser/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
             Priser
           </a>
-          <a href="om/" class="px-3 py-2 font-medium transition-colors rounded-md">
+          <a href="om/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
             Om klinikken
           </a>
-          <a href="kontakt/" class="px-3 py-2 font-medium transition-colors rounded-md">
+          <a href="kontakt/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
             Kontakt
           </a>
         </nav>
@@ -42,9 +44,9 @@
   
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="md:hidden hidden pb-4 flex flex-col gap-2">
-        <a href="priser/" class="px-3 py-2 rounded-md">Priser</a>
-        <a href="om/" class="px-3 py-2 rounded-md">Om klinikken</a>
-        <a href="kontakt/" class="px-3 py-2 rounded-md">Kontakt</a>
+        <a href="priser/" class="px-3 py-2 rounded-md text-gray-700 ">Priser</a>
+        <a href="om/" class="px-3 py-2 rounded-md text-gray-700">Om klinikken</a>
+        <a href="kontakt/" class="px-3 py-2 rounded-md text-gray-700">Kontakt</a>
       </div>
     </div>
   </header>
@@ -94,7 +96,7 @@
 </main>
 
 <footer class="bg-gray-200 border-t mt-12">
-  <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center text-center md:text-left">
     <div>
       <h3 class="font-semibold mb-2">Tandlæge Klinikken</h3>
       <p class="text-sm">Der har eksisteret tandlægeklinik på Tuborgvej 238, siden ejendommen blev opført I 1953.
@@ -118,7 +120,7 @@
       <h4 class="font-semibold mb-2">Adresse</h4>
       <p class="text-sm">Tandlæge Rikke Mørch</p>
       <p class="text-sm">Tuborgvej 238<br>2400 København NV</p>
-      <p class="text-sm mt-2"><a href="privatliv/" class="hover:text-primary">Privatlivspolitik</a></p>
+      <p class="text-sm mt-5 underline"><a href="privatliv/" class="hover:text-primary">Privatlivspolitik</a></p>
     </div>
   </div>
 
@@ -128,5 +130,6 @@
     </div>
   </div>
 </footer>
+
 </body>
 </html>

@@ -22,16 +22,18 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!linkPage || linkPage === 'index.html') {
       linkPage = 'home';
     }
-
+  
+    // Remove font-bold completely
     if (linkPage === currentPage) {
-      // Current page → highlight
-      link.classList.add('bg-primary', 'text-white');
+      // Current page → highlight using color and underline
+      link.classList.add('text-primary', 'border-b-2', 'underline');
+      link.classList.remove('hover-underline'); // ensure no pseudo-element conflicts
     } else {
       // Not current page → add hover underline
       link.classList.add('hover-underline');
+      link.classList.remove('border-b-2', 'border-primary', 'text-primary');
     }
   });
-});
 
 
 
