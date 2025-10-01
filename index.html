@@ -19,19 +19,13 @@
   
         <!-- Desktop Menu -->
         <nav class="hidden md:flex md:items-center md:gap-8">
-          <a href="./" class="px-3 py-2 font-medium transition-colors rounded-md not-last:text-gray-700 hover:text-primary">
-            Hjem
-          </a>
-          <a href="priser/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'priser' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="priser/" class="px-3 py-2 font-medium transition-colors rounded-md">
             Priser
           </a>
-          <a href="om/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'om' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="om/" class="px-3 py-2 font-medium transition-colors rounded-md">
             Om klinikken
           </a>
-          <a href="kontakt/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'kontakt' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="kontakt/" class="px-3 py-2 font-medium transition-colors rounded-md">
             Kontakt
           </a>
         </nav>
@@ -48,10 +42,10 @@
   
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="md:hidden hidden pb-4 flex flex-col gap-2">
-        <a href="/" class="px-3 py-2 rounded-md {{ page == 'home' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Hjem</a>
-        <a href="/priser/" class="px-3 py-2 rounded-md {{ page == 'priser' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Priser</a>
-        <a href="/om/" class="px-3 py-2 rounded-md {{ page == 'om' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Om klinikken</a>
-        <a href="/kontakt/" class="px-3 py-2 rounded-md {{ page == 'kontakt' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Kontakt</a>
+        <a href="./" class="px-3 py-2 rounded-md {{ page == 'home' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Hjem</a>
+        <a href="priser/" class="px-3 py-2 rounded-md {{ page == 'priser' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Priser</a>
+        <a href="om/" class="px-3 py-2 rounded-md {{ page == 'om' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Om klinikken</a>
+        <a href="kontakt/" class="px-3 py-2 rounded-md {{ page == 'kontakt' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Kontakt</a>
       </div>
     </div>
   </header>

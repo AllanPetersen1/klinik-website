@@ -29,3 +29,19 @@ body {
   background-color: var(--color-secondary);
 }
 
+/* Add a bottom border (underline) on hover for non-active links */
+.hover-underline::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--primary);
+  width: 0;
+  transition: width 0.3s;
+  margin-top: 2px;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+
