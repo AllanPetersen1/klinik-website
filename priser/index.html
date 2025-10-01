@@ -4,39 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tandlæge klinik - moderne, venligt design.">
-  <script src="/script/main.js" defer></script>
+  <script src="../script/main.js" defer></script>
   <title>Priser - Tandlæge Klinikken</title>
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- Tailwind CDN (no build required) + custom color primary (#758cb2) -->
+  <link rel="stylesheet" href="../css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   
-
 </head>
 <body class="antialiased text-gray-800 bg-white">
 
-  <header class="bg-white shadow-sm">
+  <header class="bg-white shadow-sm text-lg">
     <div class="max-w-5xl mx-auto px-4">
       <div class="flex items-center justify-between py-4">
-        <!-- Logo / Nav-name -->
-        <a href="/" class="text-2xl text-gray-800 hover:text-primary transition-colors">Tandlæge <span class="font-bold">Rikke Mørch</span></a>
+        <!-- Logo / Home link -->
+        <a href="../" class="text-2xl text-gray-800 hover:text-primary transition-colors">
+          Tandlæge <span class="font-bold">Rikke Mørch</span>
+        </a>
   
         <!-- Desktop Menu -->
         <nav class="hidden md:flex md:items-center md:gap-8">
-          <a href="/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'home' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
-            Hjem
-          </a>
-          <a href="/priser/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'priser' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="../priser/" class="px-3 py-2 font-medium transition-colors rounded-md text-gray-700">
             Priser
           </a>
-          <a href="/om/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'om' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="../om/" class="px-3 py-2 font-medium transition-colors rounded-md text-gray-700">
             Om klinikken
           </a>
-          <a href="/kontakt/" class="px-3 py-2 font-medium transition-colors rounded-md
-            {{ page == 'kontakt' ? 'text-white bg-primary' : 'text-gray-700 hover:text-primary' }}">
+          <a href="../kontakt/" class="px-3 py-2 font-medium transition-colors rounded-md text-gray-700">
             Kontakt
           </a>
         </nav>
@@ -53,10 +45,9 @@
   
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="md:hidden hidden pb-4 flex flex-col gap-2">
-        <a href="/" class="px-3 py-2 rounded-md {{ page == 'home' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Hjem</a>
-        <a href="/priser/" class="px-3 py-2 rounded-md {{ page == 'priser' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Priser</a>
-        <a href="/om/" class="px-3 py-2 rounded-md {{ page == 'om' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Om klinikken</a>
-        <a href="/kontakt/" class="px-3 py-2 rounded-md {{ page == 'kontakt' ? 'bg-primary text-white' : 'text-gray-700 hover:text-primary' }}">Kontakt</a>
+        <a href="../priser/" class="px-3 py-2 rounded-md text-gray-700 ">Priser</a>
+        <a href="../om/" class="px-3 py-2 rounded-md text-gray-700">Om klinikken</a>
+        <a href="../kontakt/" class="px-3 py-2 rounded-md text-gray-700">Kontakt</a>
       </div>
     </div>
   </header>
