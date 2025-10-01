@@ -7,33 +7,26 @@ if (btn) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  const path = window.location.pathname; // e.g. "/klinik-website/priser/"
+  const path = window.location.pathname; 
   const links = document.querySelectorAll('nav a');
 
-  // Determine the current page
-  let currentPage = path.split('/').filter(Boolean).pop(); // last segment
-  if (!currentPage || currentPage === 'index.html') {
-    currentPage = 'home'; // treat homepage as 'home'
-  }
+  let currentPage = path.split('/').filter(Boolean).pop();
+  if (!currentPage || currentPage === 'index.html') currentPage = 'home';
 
   links.forEach(link => {
     let href = link.getAttribute('href').replace(/\/$/, '');
     let linkPage = href.split('/').filter(Boolean).pop();
-    if (!linkPage || linkPage === 'index.html') {
-      linkPage = 'home';
-    }
-  
-    // Remove font-bold completely
+    if (!linkPage || linkPage === 'index.html') linkPage = 'home';
+
     if (linkPage === currentPage) {
-      // Current page → highlight using color and underline
-      link.classList.add('text-primary', 'border-b-2', 'underline');
-      link.classList.remove('hover-underline'); // ensure no pseudo-element conflicts
+      // Active link → show underline and primary color
+      link.classList.add('text-primary', 'border-primary');
     } else {
-      // Not current page → add hover underline
-      link.classList.add('hover-underline');
-      link.classList.remove('border-b-2', 'border-primary', 'text-primary');
+      // Inactive → keep default border & color
+      link.classList.remove('text-primary', 'border-primary');
     }
   });
+});
 
 
 
