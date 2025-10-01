@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tandlæge klinik - moderne, venligt design.">
+  <title>Privatlivspolitik - Tandlæge Klinikken</title>
+
+  <!-- Tailwind CDN (no build required) + custom color primary (#758cb2) -->
+  <script>
+    tailwind = window.tailwind || {{} };
+    tailwind.config = {{ theme: {{ extend: {{ colors: {{ primary: '#758cb2' }} }} }} }};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="antialiased text-gray-800 bg-white">
+
+<header class="bg-white shadow-sm">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="#758cb2"><path d="M12 2C9 2 6 4 6 7c0 4.5 6 11 6 11s6-6.5 6-11c0-3-3-5-6-5z"/></svg>
+        </div>
+        <span class="font-semibold text-lg">Tandlæge Klinikken</span>
+      </a>
+
+      <nav class="hidden md:flex md:items-center md:gap-6">
+        <a href="/" class="hover:text-primary">Hjem</a>
+        <a href="/priser/" class="hover:text-primary">Priser</a>
+        <a href="/om/" class="hover:text-primary">Om klinikken</a>
+        <a href="/kontakt/" class="hover:text-primary">Kontakt</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="nav-toggle" aria-label="Åben menu" class="p-2 rounded-md border">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#374151"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden pb-4">
+      <a href="/" class="block py-2 border-t">Hjem</a>
+      <a href="/priser/" class="block py-2 border-t">Priser</a>
+      <a href="/om/" class="block py-2 border-t">Om klinikken</a>
+      <a href="/kontakt/" class="block py-2 border-t">Kontakt</a>
+    </div>
+  </div>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.getElementById('nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (btn) btn.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+});
+</script>
+
+<main class="max-w-5xl mx-auto px-4 py-12">
+  <h1 class="text-2xl font-bold mb-4">Privatlivspolitik</h1>
+  <p class="text-sm mb-4">Nedenfor kan du læse klinikkens privatlivspolitik for patientbehandling.</p>
+
+  <section class="mb-6">
+    <h2 class="font-semibold">Personoplysninger</h2>
+    <p class="text-sm mt-2">Eksempel tekst...</p>
+  </section>
+
+  
+</main>
+
+<footer class="bg-gray-50 border-t mt-12">
+  <div class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div>
+      <h3 class="font-semibold mb-2">Tandlæge Klinikken</h3>
+      <p class="text-sm">En hyggelig og moderne tandklinik med fokus på tryghed og kvalitet.</p>
+      <p class="text-sm mt-3">Telefon: <a href="tel:+4512345678" class="text-primary">+45 12 34 56 78</a></p>
+      <p class="text-sm">Email: <a href="mailto:info@tandklinik.dk" class="text-primary">info@tandklinik.dk</a></p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-2">Åbningstider</h4>
+      <ul class="text-sm space-y-1">
+        <li>Man–Tor: 08:00 — 16:00</li>
+        <li>Fre: 08:00 — 14:00</li>
+        <li>Lukket: Weekend & helligdage</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-2">Adresse & privatliv</h4>
+      <p class="text-sm">Eksempelvej 12<br>2100 København Ø</p>
+      <p class="text-sm mt-2"><a href="/privatliv/" class="hover:text-primary">Privatlivspolitik</a></p>
+    </div>
+  </div>
+
+  <div class="bg-white border-t">
+    <div class="max-w-5xl mx-auto px-4 py-3 text-xs text-gray-500 flex items-center justify-between">
+      <span>© 2025, Tandlæge Rikke Mørch</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
