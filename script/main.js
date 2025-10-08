@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+//Getting the year for the footer
+const currentYear = new Date().getFullYear();
+// Insert it into the span with id="year"
+document.getElementById("year").textContent = currentYear;
 
 
 
