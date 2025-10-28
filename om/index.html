@@ -12,7 +12,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="antialiased text-gray-800 bg-white">
+<body class="flex flex-col antialiased text-gray-800 bg-white min-h-screen">
 
   <header class="bg-white shadow-sm text-xl">
     <div class="max-w-5xl mx-auto px-4">
@@ -55,7 +55,7 @@
   </header>
 
 
-  <main class="max-w-6xl mx-auto px-4 py-12">
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 
       <!-- Tekst -->
@@ -87,7 +87,7 @@
     </div>
   </main>
 
-  <footer class="bg-gray-200 border-t mt-12">
+  <footer class="bg-gray-200 border-t">
     <div
       class="max-w-5xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center text-center md:text-left">
       <div>
@@ -115,12 +115,9 @@
         <p class="text-sm">Tandlæge Rikke Mørch</p>
         <p class="text-sm">Tuborgvej 238<br>2400 København NV</p>
         <p class="text-sm mt-5 underline"><a href="../privatliv/" class="hover:text-primary">Privatlivspolitik</a></p>
-      </div>
-    </div>
-
-    <div class="bg-white border-t">
-      <div class="max-w-5xl mx-auto px-4 py-3 text-xs text-gray-500 flex items-center justify-between">
-        <span>© <span id=year></span>, Tandlæge Rikke Mørch</span>
+        <div class="max-w-5xl mx-auto py-3 text-xs text-gray-500 flex items-center justify-between">
+          <span>© <span id=year></span>, Tandlæge Rikke Mørch</span>
+        </div>
       </div>
     </div>
   </footer>
