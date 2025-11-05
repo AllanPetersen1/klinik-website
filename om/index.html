@@ -10,6 +10,7 @@
   <script src="../script/main.js" defer></script>
   <link rel="stylesheet" href="../css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 
@@ -60,57 +61,88 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
       <!-- Tekst -->
-      <div>
-        <h1 class="text-2xl font-bold mb-4">Om klinikken</h1>
-        <p class="mb-4">
-          Der har eksisteret tandlægeklinik på Tuborgvej 238, siden ejendommen blev opført i 1953.<br><br>
-          Klinikken blev i 2008 overtaget af tandlæge Rikke Mørch, der er den fjerde tandlæge på adressen.<br><br>
-          Klinikken er siden overtagelsen blevet moderniseret, og dette fortsætter løbende.
-          Du vil derfor blive behandlet med det nyeste udstyr og behandlingsmetoder.<br><br>
-          Hvis du arbejder eller bor i Brønshøj, Bispebjerg, Emdrup, Nørrebro, NV, Gentofte, Hellerup,
-          Østerbro, Dyssegaard eller Frederiksberg, har du ikke langt til klinikken.
+      <div class="max-w-3xl mx-auto px-4 py-6 text-gray-800 text-base leading-relaxed">
+        <h1 class="text-2xl font-bold mb-3">Om klinikken</h1>
+
+        <p class="mb-2">
+          Der har eksisteret tandlægeklinik på Tuborgvej 238, siden ejendommen blev opført i 1953.
         </p>
-        <section>
-          <h3 class="font-semibold">Vores værdier</h3>
-          <p class="text-sm mt-2">
+        <p class="mb-2">
+          Klinikken blev i 2008 overtaget af tandlæge Rikke Mørch, der er den fjerde tandlæge på adressen.
+        </p>
+        <p class="mb-2">
+          Klinikken er siden overtagelsen blevet moderniseret, og dette fortsætter løbende. Du vil derfor blive
+          behandlet med det nyeste udstyr og behandlingsmetoder.
+        </p>
+        <p class="mb-2">
+          Hvis du arbejder eller bor i Brønshøj, Bispebjerg, Emdrup, Nørrebro, NV, Gentofte, Hellerup, Østerbro,
+          Dyssegaard eller Frederiksberg, har du ikke langt til klinikken.
+        </p>
+
+        <section class="mt-4">
+          <h3 class="font-semibold mb-1">Vores værdier</h3>
+          <p class="text-sm mb-2">
             Her på klinikken bestræber vi os på at give vores patienter den bedste behandling i rolige og trygge
-            omgivelser.<br>
+            omgivelser.
+          </p>
+          <p class="text-sm mb-2">
             Det er en lille hyggelig klinik med et team bestående af to tandlæger og tre klinikassistenter, som lægger
-            vægt på at kende dig og dine tænder.<br>
-            Vi arbejder efter devisen om at give dig den bedste tandbehandling ud fra de givne forhold og ud fra
-            tanken om, at det også ville være den behandling, som vi selv eller vores nærmeste skulle have i en
-            lignende situation.<br>
+            vægt på at kende dig og dine tænder.
+          </p>
+          <p class="text-sm mb-2">
+            Vi arbejder efter devisen om at give dig den bedste tandbehandling ud fra de givne forhold og ud fra tanken
+            om, at det også ville være den behandling, som vi selv eller vores nærmeste skulle have i en lignende
+            situation.
+          </p>
+          <p class="text-sm mb-2">
             Vi har en del patienter tilknyttet, hvor det er hele familier i flere generationer, som kommer, eller som er
-            blevet anbefalet af kollegaer eller venner.<br>
+            blevet anbefalet af kollegaer eller venner.
+          </p>
+          <p class="text-sm mb-2">
             Her er plads til forskellighed og plads til dig!
           </p>
         </section>
       </div>
 
-      <!-- Billede -->
-      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
       <div x-data="{ open: false }"
-        class="mt-5 flex flex-col items-center md:items-end text-center md:text-right relative">
+        class="mt-5 flex flex-col items-center md:items-end text-center md:text-left relative">
         <!-- Image -->
         <img src="../images/top_logo.PNG" alt="Tandlægeklinikken" class="rounded-lg w-full max-w-md object-cover">
 
-        <!-- Toggle text -->
-        <button @click="open = !open" class="mt-2 text-primary font-medium hover:underline focus:outline-none">
+        <!-- Toggle text with arrow -->
+        <button @click="open = !open"
+          class="mt-4 flex items-center text-primary font-medium hover:underline focus:outline-none">
           Læs om vores logo her
+          <!-- Arrow -->
+          <svg :class="{ 'rotate-180': open }" class="ml-1 h-4 w-4 transition-transform duration-300" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </button>
 
-        <!-- Hidden text (overlayed so it doesn’t shift layout) -->
+        <!-- Hidden text expanding downwards -->
         <div x-show="open" x-collapse
           class="absolute top-full mt-1 text-gray-700 text-sm bg-white/80 backdrop-blur-sm rounded-md p-3 shadow-md max-w-md w-full">
-          <p>
-            Klinikkens logo er blevet udarbejdet i forbindelse med, at Rikke Mørch overtog klinikken. Forbogstavet R
-            danner logoet, og i kombination med navnet det færdige navnetræk. Det store R illustrerer et af tandlægens
-            vigtigste råd om brugen af tandtråd samtidig med at styrke hukommelsen om navnet Rikke. Logoet og
-            placeringen af navnet indgår i varierede kompositioner, hvilket skaber en dynamik og variation, der
-            underbygger klinikkens profil. Typografiens spinkle rene linier og den blåviolette farve henleder tankerne
-            til vand, renlighed, ro og seriøsitet. Den visuelle identitet for tandlæge Rikke Mørch er designet af
-            Michael Stabell i april 2008.
+          <p class="mb-1">
+            Klinikkens logo blev udarbejdet i forbindelse med, at Rikke Mørch overtog klinikken.
+          </p>
+          <p class="mb-1">
+            Forbogstavet R danner logoet, og i kombination med navnet skaber det det færdige navnetræk.
+          </p>
+          <p class="mb-1">
+            Det store R illustrerer et af tandlægens vigtigste råd om brugen af tandtråd, samtidig med at det styrker
+            hukommelsen om navnet Rikke.
+          </p>
+          <p class="mb-1">
+            Logoet og placeringen af navnet indgår i varierede kompositioner, hvilket skaber en dynamik og variation,
+            der underbygger klinikkens profil.
+          </p>
+          <p class="mb-1">
+            Typografiens spinkle, rene linjer og den blåviolette farve henleder tankerne til vand, renlighed, ro og
+            seriøsitet.
+          </p>
+          <p class="mb-1">
+            Den visuelle identitet for tandlæge Rikke Mørch blev designet af Michael Stabell i april 2008.
           </p>
         </div>
       </div>
@@ -135,8 +167,8 @@
         <ul class="text-sm space-y-1 tracking-wide">
           <li>Mandag: 08:00 — 16:00</li>
           <li>Tirsdag: 08:00 — 15:30</li>
-          <li>Onsdag: 08:30 — 18:00</li>
-          <li>Torsdag: 08:30 — 17:00</li>
+          <li>Onsdag: 09:00 — 18:00</li>
+          <li>Torsdag: 08:30 — 16:00</li>
           <li>Fredag: 08:00 — 13:00</li>
         </ul>
       </div>
