@@ -10,6 +10,7 @@
   <script src="../script/main.js" defer></script>
   <link rel="stylesheet" href="../css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 
 <body class="flex flex-col antialiased text-gray-800 bg-white min-h-screen">
@@ -87,8 +88,31 @@
       </div>
 
       <!-- Billede -->
-      <div class="mt-5 flex items-center justify-center md:justify-end">
+      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+      <div x-data="{ open: false }"
+        class="mt-5 flex flex-col items-center md:items-end text-center md:text-right relative">
+        <!-- Image -->
         <img src="../images/top_logo.PNG" alt="Tandlægeklinikken" class="rounded-lg w-full max-w-md object-cover">
+
+        <!-- Toggle text -->
+        <button @click="open = !open" class="mt-2 text-primary font-medium hover:underline focus:outline-none">
+          Læs om vores logo her
+        </button>
+
+        <!-- Hidden text (overlayed so it doesn’t shift layout) -->
+        <div x-show="open" x-collapse
+          class="absolute top-full mt-1 text-gray-700 text-sm bg-white/80 backdrop-blur-sm rounded-md p-3 shadow-md max-w-md w-full">
+          <p>
+            Klinikkens logo er blevet udarbejdet i forbindelse med, at Rikke Mørch overtog klinikken. Forbogstavet R
+            danner logoet, og i kombination med navnet det færdige navnetræk. Det store R illustrerer et af tandlægens
+            vigtigste råd om brugen af tandtråd samtidig med at styrke hukommelsen om navnet Rikke. Logoet og
+            placeringen af navnet indgår i varierede kompositioner, hvilket skaber en dynamik og variation, der
+            underbygger klinikkens profil. Typografiens spinkle rene linier og den blåviolette farve henleder tankerne
+            til vand, renlighed, ro og seriøsitet. Den visuelle identitet for tandlæge Rikke Mørch er designet af
+            Michael Stabell i april 2008.
+          </p>
+        </div>
       </div>
 
     </div>
