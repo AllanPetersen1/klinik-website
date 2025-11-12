@@ -8,6 +8,8 @@
   <script src="script/main.js" defer></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 </head>
 
@@ -59,7 +61,7 @@
       <div class="pt-6 px-6 rounded-xl md:flex md:items-center md:gap-6">
         <!-- TEXT SIDE -->
         <div class="flex-1">
-          <h1 class="text-3xl font-bold mb-2">Velkommen <span >til Tandlægeklinikken på Turborgvej 238.</span></h1>
+          <h1 class="text-3xl font-bold mb-2">Velkommen <span>til Tandlægeklinikken på Turborgvej 238.</span></h1>
           <p class="text-white mb-4">
             Her bestræber vi os på at give vores patienter den bedste behandling i rolige og trygge omgivelser.<br>
             Det er en lille hyggelig klinik med et team bestående af to tandlæger og tre klinikassistenter, som
@@ -87,25 +89,110 @@
 
   <section class="max-w-5xl mx-auto px-4 py-12">
     <h2 class="text-2xl font-semibold mb-8">Vores behandlinger</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="p-4 rounded-lg border card-glass">
-        <h3 class="font-semibold">Akut Tandbehandling</h3>
-        <p class="text-sm mt-2">I tilfælde af akut tandpine eller tandskade, skal du ringe hurtigst muligt.</p>
+
+    <!-- 2x2 Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Card 1 -->
+      <div class="p-4 rounded-lg border card-glass flex flex-col justify-between h-full" x-data="{ open: false }">
+        <div>
+          <h3 class="font-semibold">Akut Tandbehandling</h3>
+          <p class="text-sm mt-2">
+            Ved større tandskade / tandtraume eller akut behandlingskrævende tandskade anbefales det
+            at kontakte Akuttelefonen på 1813.
+          </p>
+
+          <div x-show="open" x-collapse class="mt-3 text-sm">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet orci vel libero efficitur
+              egestas. Curabitur at nisi ac massa gravida dapibus.</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-4">
+          <button @click="open = !open" class="focus:outline-none">
+            <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transition-transform duration-300" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="p-4 rounded-lg border card-glass">
-        <h3 class="font-semibold">Kosmetisk tandpleje</h3>
-        <p class="text-sm mt-2">På klinikken udfører vi flere former for kosmetisk tandpleje. Eksempelvis tandretning
-          og tandblegning.</p>
+
+      <!-- Card 2 -->
+      <div class="p-4 rounded-lg border card-glass flex flex-col justify-between h-full" x-data="{ open: false }">
+        <div>
+          <h3 class="font-semibold">Almindelig forebyggende tandpleje</h3>
+          <p class="text-sm mt-2">
+            Regelmæssige undersøgelser og kontrol af mundhule, tænder og kæber er vigtige for at bevare
+            sunde tænder og god funktion hele livet.
+          </p>
+
+          <div x-show="open" x-collapse class="mt-3 text-sm">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer varius ante at ligula
+              volutpat blandit. Etiam accumsan lorem in sem pretium porta.</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-4">
+          <button @click="open = !open" class="focus:outline-none">
+            <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transition-transform duration-300" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="p-4 rounded-lg border card-glass">
-        <h3 class="font-semibold">Implantater og kæbekirurgi</h3>
-        <p class="text-sm mt-2"> Vi samarbejder med førende kæbekirurger der udfører operationer såsom isættelse af
-          implantat, kirurgisk fjernelse af tænder med mere.</p>
+
+      <!-- Card 3 -->
+      <div class="p-4 rounded-lg border card-glass flex flex-col justify-between h-full" x-data="{ open: false }">
+        <div>
+          <h3 class="font-semibold">Behandlingsplan</h3>
+          <p class="text-sm mt-2">
+            I forbindelse med større behandlinger laver vi en behandlingsplan, som vi gennemgår sammen med
+            patienten.
+          </p>
+
+          <div x-show="open" x-collapse class="mt-3 text-sm">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Fusce aliquet felis ut dui
+              tincidunt, nec feugiat erat porta.</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-4">
+          <button @click="open = !open" class="focus:outline-none">
+            <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transition-transform duration-300" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="p-4 rounded-lg border card-glass">
-        <h3 class="font-semibold">Broer og kroner</h3>
-        <p class="text-sm mt-2">På klinikken har vi stor erfaring med at lave broer og kroner.</p>
+
+      <!-- Card 4 -->
+      <div class="p-4 rounded-lg border card-glass flex flex-col justify-between h-full" x-data="{ open: false }">
+        <div>
+          <h3 class="font-semibold">Tandlægeskræk</h3>
+          <p class="text-sm mt-2">
+            Vi giver ekstra tid til patienter med tandlægeskræk og nærmer os angsten stille og roligt, mens vi
+            forklarer, hvad der skal ske, og giver os tid til dig.
+          </p>
+
+          <div x-show="open" x-collapse class="mt-3 text-sm">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales mi at eros efficitur, vel
+              feugiat ipsum placerat. Phasellus sit amet ex ac lectus luctus bibendum.</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-4">
+          <button @click="open = !open" class="focus:outline-none">
+            <svg :class="{ 'rotate-180': open }" class="h-6 w-6 transition-transform duration-300" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
+
     </div>
   </section>
   </main>
