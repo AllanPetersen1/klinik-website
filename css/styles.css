@@ -44,4 +44,9 @@ nav a.active::after {
   width: 100%;
 }
 
+button:hover .accordian-btn {
+  stroke: var(--primary);
+}
+
+
 
