@@ -87,7 +87,7 @@
     </div>
   </section>
 
-  <section class="max-w-3xl mx-auto px-4 py-12" x-data="{ open: null }">
+ <section class="max-w-3xl mx-auto px-4 py-12" x-data="{ open: null }">
     <h2 class="text-2xl font-semibold mb-8 pl-4">Vores behandlinger</h2>
 
     <template x-for="(item, i) in [
@@ -171,13 +171,165 @@
           Det kan ske ved hjælp af akupunkturnåle eller ved fingertryk på bestemte punkter.
         </p>
       `
+    },
+
+    /* --- 5. PARODONTITIS (DIN FULDE 1:1 TEKST) --- */
+    {
+      title: 'Parodontitis',
+      intro: 'Tænderne sidder fast i kæbeknoglerne med små fibre mellem tand og knogle.',
+      content: `
+        <p class='mb-2'>
+          Uden på knoglen er tandkødet, som ved sunde forhold er lyserød og svagt nubret i overfladen. Sundt tandkød bløder ikke ved brug af tandbørste og tandtråd/-stikkere. Der, hvor tandkødet fæstner sig på tand og knogle, dannes en lille tandkødslomme (poche), som ved sunde forhold er 2-3 mm dyb.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Tandkødsbetændelse</h4>
+        <p class='mb-2'>
+          Tandkødsbetændelse kan opstå, hvis tænderne ikke bliver børstet helt rene. Det kan også være hormonelt betinget, f.eks. ved graviditet. Endvidere kan flere slags medicin forårsage ændringer i tandkødet. I bakteriebelægninger (plak), der ikke bliver fjernet, kan der over tid ske forkalkninger, og tandsten kan opstå. Tandsten gør tandoverfladen mere ru og sværere at renholde. Tandkødet kan derfor blive rødt, hævet og blødende. Fjernes bakteriebelægninger og tandsten af tandlægen/tandplejeren, vil tandkødet hurtigt blive sundt igen. Tandlægen/tandplejeren vil også kunne fortælle dig, hvad du skal gøre for fremtidigt at have et sundt tandkød.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Parodontitis</h4>
+        <p class='mb-2'>
+          Parodontitis er en sygdom i tændernes ophæng. Bliver tandkødsbetændelsen ikke behandlet i tide, kan betændelsen brede sig til kæbeknoglen og udvikle sig til parodontitis. Over tid vil kæbeknoglen ved tandrødderne blive nedbrudt og tandkødslommen (pochen) blive dybere. Tandkødet vil ikke længere sidde så fast omkring tandroden, og det vil derfor betyde, at bakterier og tandsten kan trænge endnu dybere ned langs tandroden og forværre sygdommen. Tænderne kan blive løse og flytte sig i tandbuen. Det kan være svært at opdage parodontitis selv, da symptomerne kan være svage eller ikke eksisterende. Det er derfor vigtigt at få kontrolleret sine tænder regelmæssigt hos tandlægen/tandplejeren, så behandling af parodontitis kan iværksættes hurtigst muligt. Man kan også få parodontitis i en ung alder, hvor der ikke nødvendigvis forudgående er mange bakteriebelægninger på tænderne.
+        </p>
+
+        <p class='mb-2'>
+          Et meget vigtigt element i al parodontitisbehandling er et tæt samarbejde mellem patient og tandlæge/tandplejer. Ofte er hyppige kontroller og opfølgende behandlinger nødvendige. Den daglige indsats med hjemmetandplejen er alfa og omega for et godt resultat og en stagnering af parodontitis.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Periimplantitis</h4>
+        <p class='mb-2'>
+          Periimplantantitis er en nedbrydning af knoglen omkring et tandimplantat. Som tidligere parodontitis patient er der en øget risiko for udvikling af periimplantitis. Parodontitis skal være under kontrol, før et tandimplantat isættes. Desuden anbefaler vi fuldstændigt rygestop både før og efter behandling med tandimplantat, idet rygning øger risikoen for tab af implantatet. Alle tandimplantater bør kontrolleres regelmæssigt af tandlæge eller tandplejer.
+        </p>
+      `
+    },
+
+    /* --- 6. PLASTFYLDNINGER --- */
+    {
+      title: 'Plastfyldninger',
+      intro: 'Vi udfører funktionelle og æstetiske plastbehandlinger ved huller, revner, slid og kosmetiske ønsker.',
+      content: `
+        <p class='mb-2'>
+          Klinikken benytter plast i mange situationer, både til almindelige plastfyldninger, men også i forbindelse med æstetiske behandlinger. Dette kan være ved ændringer af tandform, -farve og -størrelse ved misfarvninger, efter tandregulering, efter paradentosebehandling samt ved reduktion af mellemrum.
+        </p>
+        <p class='mb-2'>
+          Plast bruges også i forbindelse med bidhævninger, bl.a. i det slidte tandsæt. I forbindelse med revner i tænderne (infraktioner) kan symptomerne ofte afhjælpes ved skift af sølvfyldning til plast.
+        </p>
+      `
+    },
+
+    /* --- 7. KRONER OG BROER --- */
+    {
+      title: 'Kroner og broer',
+      intro: 'På klinikken har vi stor erfaring med at lave kroner og broer.',
+      content: `
+        <h4 class='font-semibold mt-2 mb-1'>Kroner</h4>
+        <p class='mb-2'>
+          Vi laver kroner af keramik, guld og metalkeramik. Vi samarbejder med flere dygtige teknikere, så vi uden at gå på kompromis med kvaliteten kan tilbyde kroner i forskellige prisniveauer. Implantatkroner laves både som skruede og cementerede løsninger afhængig af situationen.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Broer</h4>
+        <p class='mb-2'>
+          Broer erstatter den manglende tand eller de manglende tænder. Vi laver konventionelle broer samt broer, der limes til nabotænderne og implantatbaserede broer.
+        </p>
+      `
+    },
+
+    /* --- 8. IMPLANTATER OG KÆBEKIRURGI --- */
+    {
+      title: 'Implantater og kæbekirurgi',
+      intro: 'Vi tilbyder implantater og kirurgiske behandlinger i samarbejde med erfarne kæbekirurger.',
+      content: `
+        <p class='mb-2'>
+          På klinikken samarbejder vi med førende kæbekirurger, der udfører operationer såsom isættelse af implantat, rodspidsamputationer, knogleopbygninger, sinusløft, kirurgisk fjernelse af tænder og andre former for kæbekirurgi.
+        </p>
+        <p class='mb-2'>
+          På klinikken benytter vi os af Straumann implantatsystem. Firmaet er schweizisk og har været på markedet i mere end 65 år. Implantatsystemet er et af de få i verden, som har gennemgået omfattende kliniske kontroller i mere end 40 år.
+        </p>
+      `
+    },
+
+    /* --- 9. RODBEHANDLING --- */
+    {
+      title: 'Rodbehandling',
+      intro: 'Rodbehandling af en tand er nødvendigt, hvis tandnerven er blevet skadet/inficeret.',
+      content: `
+        <p class='mb-2'>
+          Rodbehandling af en tand er nødvendigt, hvis tandnerven er blevet skadet/inficeret. Det kan enten være ved et traume (fald eller lignende) eller ved et dybt hul i tanden. Nogle gange giver tanden stærke smerter, andre gange mærker man intet, og det vil da ofte være tandlægen, der opdager problemet.
+        </p>
+        <p class='mb-2'>
+          Ved en rodbehandling fjernes vævet i tandens hulrum, der skylles meget grundigt med en desinficerende væske. Til slut fyldes tandens hulrum med et gummimateriale. Behandlingen bliver udført i lokalbedøvelse.
+        </p>
+        <p class='mb-2'>
+          Her på klinikken sætter vi en ære i at udføre optimale rodbehandlinger. Vi gør os umage og benytter de nyeste hjælpemidler og rodbehandlingsprincipper for at sikre en bedre kvalitet af rodfyldningen. Dette er med til at sikre en højere succesrate for de rodbehandlede tænder.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Opfølgning på rodbehandling</h4>
+        <p class='mb-2'>
+          Efter 6-12 måneder foretages kontrol med røntgen af den rodbehandlede tand for at sikre, at der er sket en heling i knoglen. Ofte vil det være nødvendigt at forsyne en rodbehandlet tand med en krone, da den lettere kan knække end en tand, der ikke er blevet rodbehandlet.
+        </p>
+      `
+    },
+
+    /* --- 10. HEL- OG DELPROTESER --- */
+    {
+      title: 'Hel- og delproteser',
+      intro: 'På klinikken udfører vi behandlinger med såvel hel- som delproteser.',
+      content: `
+        <p class='mb-2'>
+          Efter en grundig gennemgang af dine resttænder, gummer, kæberelationer og individuelle ønsker lægges en plan for udformningen af hel- og delproteser. Det er vigtigt med et tæt samarbejde med tandteknikeren ved fremstilling af hel- og delproteser. Klinikken har gennem en årrække haft et godt og tæt samarbejde med en meget dygtig tekniker til protesefremstilling.
+        </p>
+        <p class='mb-2'>
+          Alle protesebærere bør regelmæssigt få kontrolleret proteserne og resttandsættet, så der til stadighed er optimal funktion og sunde forhold i munden.
+        </p>
+        <p class='mb-2'>
+          En hel- eller delprotese vil betyde en øget indsats for at holde mundhygiejnen i top. Tandlægen/tandplejeren vil forklare, hvordan en optimal mundhygiejne som protesebærer kan opretholdes.
+        </p>
+        <p class='mb-2'>
+          En protese kan også fastgøres ved tandimplantater. Også i den situation er det meget vigtigt med regelmæssig kontrol og optimal mundhygiejne.
+        </p>
+      `
+    },
+
+    /* --- 11. KOSMETISK TANDPLEJE --- */
+    {
+      title: 'Kosmetisk tandpleje',
+      intro: 'På klinikken tilbyder blegning, facader, æstetiske plastløsninger og mindre tandretninger.',
+      content: `
+        <h4 class='font-semibold mt-4 mb-1'>Tandblegning</h4>
+        <p class='mb-2'>
+          På klinikken udfører vi flere former for kosmetisk tandpleje. Det kan være en generel tandblegning af misfarvede tænder eller en enkelttandsblegning af en misfarvet rodbehandlet fortand. Ved en generel tandblegning fremstilles en blegeskinne, så blegningen af tænderne kan foretages hjemme i løbet af et par uger. Vi instruerer i brug af skinnen, forholdsregler og risici, og man kommer siden til en kontrol af blegningen. Skinnen kan efter nogle år anvendes igen, hvis tandfarven skal friskes op.
+        </p>
+        <p class='mb-2'>
+          Ikke alle misfarvninger kan fjernes med blegning. Tandlægen/tandplejeren vil vurdere i det enkelte tilfælde, om blegning vil være mulig. Vi laver også flotte fuldkeramiske kroner og facader i tæt samarbejde med vores dygtige tekniker. Vi anbefaler altid farveprøve og farvekorrektion hos vores tekniker ved behandling med fortandskroner.
+        </p>
+
+        <h4 class='font-semibold mt-4 mb-1'>Tandretning</h4>
+        <p class='mb-2'>
+          En vigtig form for kosmetisk tandpleje er tandretning. Tandretning foretages i samarbejde med en ortodontisk tandlæge, men mindre korrektioner kan foretages på klinikken. Plast kan i mange situationer bruges til at ændre tændernes form og farve. Vi har gode erfaringer med at lukke mellemrum, udbygge små tænder, så de syner større og ændre form på tænder, så de falder bedre ind i tandsættet som helhed.
+        </p>
+      `
+    },
+
+    /* --- 12. BID OG KÆBELED --- */
+    {
+      title: 'Bid og kæbeled',
+      intro: 'Vi laver skinner til tandpres, kæbeledsproblemer, snorken og til stabilisering efter tandregulering.',
+      content: `
+        <p class='mb-2'>
+          Vi fremstiller bidskinner for af aflaste mod tandpres, tandslid og slid af kæbeled. Desuden laver vi retentionsskinner efter tandregulering og snorkeskinner.
+        </p>
+        <p class='mb-2'>
+          Ved mere komplicerede forhold henviser vi til nogle dygtige kollegaer med stor erfaring i behandling af kæbeled og uhensigtsmæssige bidforhold.
+        </p>
+      `
     }
   ]" :key="i">
+
       <div class="border rounded-lg mb-4 p-4 shadow-sm bg-white flex flex-col">
 
         <!-- Top: title + arrow -->
         <div class="flex justify-between items-start">
-          <div class="pr-8"> <!-- Add right padding to avoid arrow overlap -->
+          <div class="pr-8">
             <h3 class="font-semibold text-lg" x-text="item.title"></h3>
             <p class="text-sm mt-1 text-gray-700" x-text="item.intro"></p>
           </div>
@@ -190,81 +342,11 @@
         </div>
 
         <!-- Fold-out content -->
-        <div x-show="open === i" x-collapse class="mt-3 text-sm text-gray-700 pr-8" x-html="item.content"></div>
+        <div x-show="open === i" x-collapse class="mt-2 text-sm text-gray-700 pr-8" x-html="item.content"></div>
 
       </div>
     </template>
-  </section>
-
-  <section class="max-w-6xl mx-auto px-4 py-12" x-data="carousel()">
-    <h2 class="text-2xl font-semibold mb-8 text-center">Yderligere behandlinger</h2>
-
-    <div class="relative">
-      <!-- Carousel viewport -->
-      <div class="overflow-hidden">
-        <!-- Carousel track -->
-        <div class="flex transition-transform duration-500"
-          :style="`transform: translateX(-${currentIndex * itemWidth}px)`">
-
-          <!-- Carousel items -->
-          <template x-for="item in items" :key="item.title">
-            <div class="flex-shrink-0 px-2 w-1/2 sm:w-1/4">
-              <div class="bg-white p-4 rounded-lg border shadow-sm h-full flex flex-col">
-                <h3 class="font-semibold mb-2" x-text="item.title"></h3>
-                <p class="text-sm text-gray-700" x-text="item.intro"></p>
-              </div>
-            </div>
-          </template>
-
-        </div>
-      </div>
-
-      <!-- Prev button -->
-      <button @click="prev()"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white border rounded-full p-2 shadow hover:bg-gray-100">
-        &#8249;
-      </button>
-
-      <!-- Next button -->
-      <button @click="next()"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white border rounded-full p-2 shadow hover:bg-gray-100">
-        &#8250;
-      </button>
-    </div>
-  </section>
-
-  <script>
-    function carousel() {
-      return {
-        currentIndex: 0,
-        items: [
-          { title: 'Tandrensning', intro: 'Professionel tandrensning for at fjerne plak og tandsten.' },
-          { title: 'Tandblegning', intro: 'Få et lysere smil med sikker og effektiv tandblegning.' },
-          { title: 'Rodbehandling', intro: 'Behandling af betændelse i tandens rodkanal for at bevare tanden.' },
-          { title: 'Fyldninger', intro: 'Reparation af huller og skader i tænderne med holdbare fyldninger.' },
-          { title: 'Tandretning', intro: 'Behandling med skinner eller bøjler for at rette tænder og forbedre bidfunktion.' },
-          { title: 'Tandimplantater', intro: 'Permanent løsning til erstatning af manglende tænder.' },
-          { title: 'Proteser', intro: 'Aftagelige eller faste proteser for at genvinde funktion og smil.' },
-          { title: 'Tandkødsbehandling', intro: 'Behandling af tandkødssygdomme for at bevare tandens sundhed.' },
-        ],
-        get itemWidth() {
-          // Adjust width dynamically depending on screen
-          if (window.innerWidth < 640) return window.innerWidth; // 1 item on mobile
-          if (window.innerWidth < 1024) return window.innerWidth / 2; // 2 items on tablet
-          return window.innerWidth / 4; // 4 items on desktop
-        },
-        next() {
-          const maxIndex = this.items.length - Math.floor(window.innerWidth / this.itemWidth);
-          if (this.currentIndex < maxIndex) this.currentIndex++;
-        },
-        prev() {
-          if (this.currentIndex > 0) this.currentIndex--;
-        },
-      }
-    }
-  </script>
-
-
+</section>
 
 
   </main>
