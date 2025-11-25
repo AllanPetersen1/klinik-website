@@ -15,44 +15,49 @@
 <body class="flex flex-col antialiased text-gray-800 bg-white min-h-screen">
 
   <header class="bg-white shadow-sm text-xl">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center justify-between py-4">
-        <!-- Logo / Home link -->
-        <a href="../" class="text-3xl text-gray-800 hover:text-primary transition-colors">
-          Tandlæge <span class="font-bold">Rikke Mørch</span>
-        </a>
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo / Home link -->
+                <a href="../" class="text-3xl text-gray-800 hover:text-primary transition-colors">
+                    Tandlæge <span class="font-bold">Rikke Mørch</span>
+                </a>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden md:flex md:items-center md:gap-8">
-          <a href="../priser/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
-            Priser
-          </a>
-          <a href="../om/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
-            Om klinikken
-          </a>
-          <a href="../kontakt/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
-            Kontakt
-          </a>
-        </nav>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex md:items-center md:gap-8">
+                    <a href="../priser/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
+                        Priser
+                    </a>
+                    <a href="../om/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
+                        Om klinikken
+                    </a>
+                    <a href="../kontakt/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
+                        Kontakt
+                    </a>
+                    <a href="../english/" class="px-3 py-2 transition-colors rounded-md text-gray-700">
+                        English
+                    </a>
+                </nav>
 
-        <!-- Mobile Hamburger -->
-        <div class="md:hidden">
-          <button id="nav-toggle" aria-label="Åben menu" class="p-2 rounded-md border">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#374151">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-            </svg>
-          </button>
+                <!-- Mobile Hamburger -->
+                <div class="md:hidden">
+                    <button id="nav-toggle" aria-label="Åben menu" class="p-2 rounded-md border">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#374151">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4 flex flex-col gap-2">
+                <a href="../priser/" class="px-3 py-2 rounded-md text-gray-700 ">Priser</a>
+                <a href="../om/" class="px-3 py-2 rounded-md text-gray-700">Om klinikken</a>
+                <a href="../kontakt/" class="px-3 py-2 rounded-md text-gray-700">Kontakt</a>
+                <a href="../english/" class="px-3 py-2 rounded-md text-gray-700">English</a>
+            </div>
         </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden hidden pb-4 flex flex-col gap-2">
-        <a href="../priser/" class="px-3 py-2 rounded-md text-gray-700 ">Priser</a>
-        <a href="../om/" class="px-3 py-2 rounded-md text-gray-700">Om klinikken</a>
-        <a href="../kontakt/" class="px-3 py-2 rounded-md text-gray-700">Kontakt</a>
-      </div>
-    </div>
-  </header>
+    </header>
 
   <main class="flex-grow max-w-6xl mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
